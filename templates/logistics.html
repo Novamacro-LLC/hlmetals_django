@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>H&L Metals Work Portal Customer Home</title>
+    <title>H&L Metals Work Portal Logistics Home</title>
 
     <!--Bootstrap CDN -->
 
@@ -117,7 +117,7 @@
               <a class="dropdown-item" href="newjobs.html">Add New Job</a>
             </div>
           </li>
-          <li nav-item dropdown>
+          <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="accounting.html"
@@ -132,7 +132,7 @@
                 >Accounting Module</a
               >
               <h6 class="dropdown-header">Expenses</h6>
-              <a class="dropdown-item" href="expensesreports.html"
+              <a class="dropdown-item" href="expensereports.html"
                 >Expense Reports</a
               >
               <a class="dropdown-item" href="vendor.html">Vendor Management</a>
@@ -228,27 +228,117 @@
             <th>Status</th>
           </tr>
         </thead>
-          <tr>
-              <td>1</td>
-              <td>Novamacro</td>
-              <td>2</td>
-              <td>Bubba's Trucking</td>
-              <td>5/31/2022</td>
-              <td>En Route</td>
-          </tr>
-          <tr>
-              <td>2</td>
-              <td>TAP</td>
-              <td>1</td>
-              <td>Bubba's Trucking</td>
-              <td>6/8/2022</td>
-              <td>Pending</td>
-          </tr>
+        <tr>
+          <td>1</td>
+          <td>Novamacro</td>
+          <td>2</td>
+          <td>Bubba's Trucking</td>
+          <td>5/31/2022</td>
+          <td>En Route</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>TAP</td>
+          <td>1</td>
+          <td>Bubba's Trucking</td>
+          <td>6/8/2022</td>
+          <td>Pending</td>
+        </tr>
       </table>
     </div>
+
     <!--Pickup Table-->
 
+    <div class="container w-100 pb-5">
+      <div class="d-flex justify-content-between align-content-center">
+        <h1 class="pb-5">Pickups</h1>
+        <a
+          class="btn btn-primary justify-content-end"
+          href="newdelivery.html"
+          style="height: 40px"
+          >Add New Pickup</a
+        >
+      </div>
+      <table class="table table-bordered table-responsive table-hover">
+        <thead>
+          <tr>
+            <th>Pickup ID</th>
+            <th>Delivery ID</th>
+            <th>Pickup Location</th>
+            <th>Trailer ID</th>
+            <th>Trucking Company</th>
+            <th>Pickup Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>Novamacro</td>
+          <td>2</td>
+          <td>Bubba's Trucking</td>
+          <td>5/31/2022</td>
+          <td>En Route</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1</td>
+          <td>TAP</td>
+          <td>1</td>
+          <td>Bubba's Trucking</td>
+          <td>6/8/2022</td>
+          <td>Pending</td>
+        </tr>
+      </table>
+    </div>
+
     <!--Trailer Table-->
+
+    <div class="container w-100 pb-5">
+      <div class="d-flex justify-content-between align-content-center">
+        <h1 class="pb-5">Trailers</h1>
+        <a
+          class="btn btn-primary justify-content-end"
+          href="newtrailer.html"
+          style="height: 40px"
+          >Add New Trailer</a
+        >
+      </div>
+      <table class="table table-bordered table-responsive table-hover">
+        <thead>
+          <tr>
+            <th>Trailer ID</th>
+            <th>Trailer Type</th>
+            <th>Trailer Length</th>
+            <th>Trailer Tag</th>
+            <th>Tag Renewal Date</th>
+            <th>Trailer Purchase Date</th>
+            <th>Trailer Sell Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>Roll Trailer</td>
+          <td>52</td>
+          <td>TN ABC 123</td>
+          <td>5/31/2022</td>
+          <td>1/1/2020</td>
+          <td></td>
+          <td>En Route</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Van Trailer</td>
+          <td>52</td>
+          <td>TN DEF 456</td>
+          <td>1/31/2022</td>
+          <td>12/20/2010</td>
+          <td></td>
+          <td>Delivered</td>
+        </tr>
+      </table>
+    </div>
 
     <!--Trucking Company Table-->
 
@@ -306,6 +396,7 @@
         <span class="text-muted text-end p-3">Powered by Novamacro</span>
       </div>
     </footer>
+
     <!-- Bootstrap JS and Popper CDN -->
 
     <script

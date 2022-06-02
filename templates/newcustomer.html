@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>H&L Metals Work Portal Customer Home</title>
+    <title>H&L Metals Work Portal New Customer</title>
 
     <!--Bootstrap CDN -->
 
@@ -163,55 +163,99 @@
       <div class="container text-center">
         <h1 class="p-5">Add New Customer</h1>
       </div>
-        <div class="container">
-          <div class="d-flex justify-content-center">
-            <form action="" class="w-75">
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerID" />
-                <label for="customerID">Customer ID</label>
-              </div>
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerName" />
-                <label for="customerName">Customer Name</label>
-              </div>
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerAddress1" />
-                <label for="customerAddress1">Customer Address</label>
-              </div>
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerAddress2" />
-                <label for="customerAddress2">Address Line 2</label>
-              </div>
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerCity" />
-                <label for="customerCity">City</label>
-              </div>
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerState" />
-                <label for="customerState">State</label>
-              </div>
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerZip" />
-                <label for="customerZip">Zip</label>
-              </div>
-              <div class="form-floating p-1">
-                <input type="text" class="form-control" id="customerPhone" />
-                <label for="customerPhone">Phone</label>
-              </div>
-              <div class="p-1">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="customerActive"
-                />
-                <label for="customerActive">Active</label>
-              </div>
-              <input type="submit" class="btn btn-primary mt-1" value="Add New Company">
-            </form>
-            <!--
-
-            -->
-          </div>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <form action="" class="w-75">
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerID"
+                placeholder="..."
+                disabled
+              />
+              <label for="customerID">Customer ID</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerName"
+                placeholder="..."
+              />
+              <label for="customerName">Customer Name</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerAddress1"
+                placeholder="..."
+              />
+              <label for="customerAddress1">Customer Address</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerAddress2"
+                placeholder="..."
+              />
+              <label for="customerAddress2">Address Line 2</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerCity"
+                placeholder="..."
+              />
+              <label for="customerCity">City</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerState"
+                placeholder="..."
+              />
+              <label for="customerState">State</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerZip"
+                placeholder="..."
+              />
+              <label for="customerZip">Zip</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="text"
+                class="form-control"
+                id="customerPhone"
+                placeholder="..."
+              />
+              <label for="customerPhone">Phone</label>
+            </div>
+            <div class="p-1">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="customerActive"
+                value=""
+                checked
+                disabled
+              />
+              <label for="customerActive">Active</label>
+            </div>
+            <input
+              type="submit"
+              class="btn btn-primary mb-5 mt-1"
+              value="Add New Customer"
+            />
+          </form>
         </div>
       </div>
     </main>
