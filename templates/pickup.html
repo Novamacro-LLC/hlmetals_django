@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>H&L Metals Work Portal Pickup Page</title>
@@ -13,8 +13,8 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-</head>
-<body>
+  </head>
+  <body>
     <!--Header-->
 
     <div class="container">
@@ -80,7 +80,9 @@
                 >Add New Trucking Company</a
               >
               <h6 class="dropdown-header">Pickup</h6>
-              <a class="dropdown-item active" href="pickup.html">Pickup Management</a>
+              <a class="dropdown-item active" href="pickup.html"
+                >Pickup Management</a
+              >
               <a class="dropdown-item" href="newpickup.html">Add New Pickup</a>
               <h6 class="dropdown-header">Delivery</h6>
               <a class="dropdown-item" href="delivery.html"
@@ -161,12 +163,11 @@
     <main class="pb-5">
       <div class="px-4 py-5 my-5 text-center">
         <!--<img class="d-block mx-auto mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
-        <h1 class="display-5 fw-bold">
-          Welcome to the Pickup Management Page
-        </h1>
+        <h1 class="display-5 fw-bold">Welcome to the Pickup Management Page</h1>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">
-            This is the part of the application that will have all the pickup information
+            This is the part of the application that will have all the pickup
+            information
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <!--<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
@@ -210,7 +211,7 @@
           <h1 class="pb-5">Pickups</h1>
           <a
             class="btn btn-primary justify-content-end"
-            href="newcustomer.html"
+            href="newpickup.html"
             style="height: 40px"
             >Add New Pickup</a
           >
@@ -218,35 +219,26 @@
         <table class="table table-bordered table-responsive table-hover">
           <thead>
             <tr>
-              <th>Trucking Company ID</th>
-              <th>Trucking Company Name</th>
-              <th>Trucking Company Address</th>
-              <th>Address Line 2</th>
-              <th>Trucking Company City</th>
-              <th>Trucking Company State</th>
-              <th>Trucking Company Zip</th>
-              <th>Trucking Company Phone</th>
+              <th>Pickup ID</th>
+              <th>Delivery ID</th>
+              <th>Trucking Company</th>
+              <th>Pickup Date</th>
+              <th>Pickup Status</th>
             </tr>
           </thead>
           <tr>
             <td>1</td>
-            <td>Novamacro</td>
-            <td>11810 Etheridge Pl</td>
-            <td></td>
-            <td>Arlington</td>
-            <td>Tennessee</td>
-            <td>38002</td>
-            <td>9014441025</td>
+            <td>1</td>
+            <td>Billy Bob Trucking</td>
+            <td>6/25/2022</td>
+            <td>Pending</td>
           </tr>
           <tr>
-            <td>1</td>
-            <td>Novamacro</td>
-            <td>11810 Etheridge Pl</td>
-            <td></td>
-            <td>Arlington</td>
-            <td>Tennessee</td>
-            <td>38002</td>
-            <td>9014441025</td>
+            <td>2</td>
+            <td>2</td>
+            <td>Billy Bob Trucking</td>
+            <td>6/25/2022</td>
+            <td>En Route</td>
           </tr>
         </table>
       </div>
@@ -273,6 +265,5 @@
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"
     ></script>
-
-</body>
+  </body>
 </html>
