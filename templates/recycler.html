@@ -1,122 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>H&L Metals Work Portal Customer Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H&L Metals Work Portal Recycler Module Home</title>
 
     <!--Bootstrap CDN -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Header-->
 
-</head>
-<body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <!--<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>-->
+          <span class="fs-4">H&L Metals Work Portal</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="customer.html"
+              data-bs-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              id="dropdownCustomer"
+              >Customer</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownCustomer">
+              <a class="dropdown-item" href="customer.html">Customer Module</a>
+              <a class="dropdown-item" href="newcustomer.html"
+                >Add New Customer</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="logistics.html"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              id="dropdownLogistics"
+              >Logistics</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownLogistics">
+              <a class="dropdown-item" href="logistics.html"
+                >Logistics Module</a
+              >
+              <h6 class="dropdown-header">Trailer</h6>
+              <a class="dropdown-item" href="trailer.html"
+                >Trailer Management</a
+              >
+              <a class="dropdown-item" href="newtrailer.html"
+                >Add New Trailer</a
+              >
+              <h6 class="dropdown-header">Trucking Company</h6>
+              <a class="dropdown-item" href="trucking.html"
+                >Trucking Company Management</a
+              >
+              <a class="dropdown-item" href="newtrucking.html"
+                >Add New Trucking Company</a
+              >
+              <h6 class="dropdown-header">Pickup</h6>
+              <a class="dropdown-item" href="pickup.html">Pickup Management</a>
+              <a class="dropdown-item" href="newpickup.html">Add New Pickup</a>
+              <h6 class="dropdown-header">Delivery</h6>
+              <a class="dropdown-item" href="delivery.html"
+                >Delivery Management</a
+              >
+              <a class="dropdown-item" href="newdelivery.html"
+                >Add New Delivery</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="recycler.html"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Recycler</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item active" href="recycler.html"
+                >Recycler Module</a
+              >
+              <h6 class="dropdown-header">Recycling Company</h6>
+              <a class="dropdown-item" href="recyclerhome.html"
+                >Recycler Management</a
+              >
+              <a class="dropdown-item" href="newrecycler.html"
+                >Add New Recycler</a
+              >
+              <h6 class="dropdown-header">Recycling Jobs</h6>
+              <a class="dropdown-item" href="jobs.html">Job Management</a>
+              <a class="dropdown-item" href="newjobs.html">Add New Job</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="accounting.html"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Accounting</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="accounting.html"
+                >Accounting Module</a
+              >
+              <h6 class="dropdown-header">Expenses</h6>
+              <a class="dropdown-item" href="expensereports.html"
+                >Expense Reports</a
+              >
+              <a class="dropdown-item" href="vendor.html">Vendor Management</a>
+              <a class="dropdown-item" href="ap.html">Account Payables</a>
+              <h6 class="dropdown-header">Income</h6>
+              <a class="dropdown-item" href="sales.html">Sales Management</a>
+              <a class="dropdown-item" href="ar.html">Account Receivables</a>
+              <h6 class="dropdown-header">Accounts</h6>
+              <a class="dropdown-item" href="gl.html">General Ledger</a>
+              <a class="dropdown-item" href="coa.html">Chart of Accounts</a>
+              <a class="dropdown-item" href="banks.html">Banking</a>
+              <a class="dropdown-item" href="asset.html">Asset Management</a>
+              <a class="dropdown-item" href="acctreports.html"
+                >Financial Reports</a
+              >
+              <h6 class="dropdown-header">Budgeting and Forecasting</h6>
+              <a class="dropdown-item" href="budget.html"
+                >Budgeting and Forecasting</a
+              >
+              <a class="" href=""></a>
+            </div>
+          </li>
+        </ul>
+      </header>
+    </div>
 
-<!--Header-->
-
-      <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <!--<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>-->
-                <span class="fs-4">H&L Metals Work Portal</span>
-              </a>
-              <ul class="nav nav-pills">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="main.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="customer.html"
-                       data-bs-toggle="dropdown"
-                       role="button"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       id="dropdownCustomer">Customer</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownCustomer">
-                      <a class="dropdown-item" href="customer.html">Customer Module</a>
-                      <a class="dropdown-item" href="newcustomer.html">Add New Customer</a>
-                      </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  "
-                       data-bs-toggle="dropdown"
-                       href="logistics.html"
-                       role="button"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       id="dropdownLogistics">Logistics</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownLogistics">
-                      <a class="dropdown-item" href="logistics.html">Logistics Module</a>
-                      <h6 class="dropdown-header">Trailer</h6>
-                      <a class="dropdown-item" href="trailer.html">Trailer Management</a>
-                      <a class="dropdown-item" href="newtrailer.html">Add New Trailer</a>
-                      <h6 class="dropdown-header">Trucking Company</h6>
-                      <a class="dropdown-item" href="trucking.html">Trucking Company Management</a>
-                      <a class="dropdown-item" href="newtrucking.html">Add New Trucking Company</a>
-                      <h6 class="dropdown-header">Pickup</h6>
-                      <a class="dropdown-item" href="pickup.html">Pickup Management</a>
-                      <a class="dropdown-item" href="newpickup.html">Add New Pickup</a>
-                      <h6 class="dropdown-header">Delivery</h6>
-                      <a class="dropdown-item" href="delivery.html">Delivery Management</a>
-                      <a class="dropdown-item" href="newdelivery.html">Add New Delivery</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle"
-                         href="recycler.html"
-                         role="button"
-                         data-bs-toggle="dropdown"
-                         aria-haspopup="true"
-                         aria-expanded="false">Recycler</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="recycler.html">Recycler Module</a>
-                        <h6 class="dropdown-header">Recycling Company</h6>
-                        <a class="dropdown-item" href="recyclerhome.html">Recycler Management</a>
-                        <a class="dropdown-item" href="newrecycler.html">Add New Recycler</a>
-                        <h6 class="dropdown-header">Recycling Jobs</h6>
-                        <a class="dropdown-item" href="jobs.html">Job Management</a>
-                        <a class="dropdown-item" href="newjobs.html">Add New Job</a>
-                      </div>
-                  </li>
-                  <li nav-item dropdown>
-                      <a class="nav-link dropdown-toggle"
-                         href="accounting.html"
-                         role="button"
-                         data-bs-toggle="dropdown"
-                         aria-haspopup="true"
-                         aria-expanded="false">Accounting</a>
-                      <div class="dropdown-menu">
-                          <a class="dropdown-item" href="accounting.html">Accounting Module</a>
-                          <h6 class="dropdown-header">Expenses</h6>
-                          <a class="dropdown-item" href="expensesreports.html">Expense Reports</a>
-                          <a class="dropdown-item" href="vendor.html">Vendor Management</a>
-                          <a class="dropdown-item" href="ap.html">Account Payables</a>
-                          <h6 class="dropdown-header">Income</h6>
-                          <a class="dropdown-item" href="sales.html">Sales Management</a>
-                          <a class="dropdown-item" href="ar.html">Account Receivables</a>
-                          <h6 class="dropdown-header">Accounts</h6>
-                          <a class="dropdown-item" href="gl.html">General Ledger</a>
-                          <a class="dropdown-item" href="coa.html">Chart of Accounts</a>
-                          <a class="dropdown-item" href="banks.html">Banking</a>
-                          <a class="dropdown-item" href="asset.html">Asset Management</a>
-                          <a class="dropdown-item" href="acctreports.html">Financial Reports</a>
-                          <h6 class="dropdown-header">Budgeting and Forecasting</h6>
-                          <a class="dropdown-item" href="budget.html">Budgeting and Forecasting</a>
-                          <a class="" href=""></a>
-                      </div>
-                  </li>
-              </ul>
-          </header>
-      </div>
-
-<!--Welcome Hero-->
-
-    <div class="px-4 py-5 my-5 text-center">
+    <!--Welcome Hero-->
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
         <!--<img class="d-block mx-auto mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
-        <h1 class="display-5 fw-bold">Welcome to the Customer Module</h1>
+        <h1 class="display-5 fw-bold">Welcome to the Recycler Module</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">This is the part of the application that will have all the customer information </p>
+          <p class="lead mb-4">
+            This is the part of the application that will have all the recycling
+            compananies information
+          </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <!--<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
             <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>-->
@@ -124,61 +176,134 @@
         </div>
       </div>
 
-<!--Customer Table-->
-    <div class="container w-100">
+      <!--Recycler Dashboard-->
+
+      <div class="container p-5">
+        <h1 class="pb-5">Recycler Dashboard</h1>
+        <div class="row">
+          <div class="col-4 border" style="height: 250px">
+            <h2 class="p-2">Metric 1</h2>
+          </div>
+          <div class="col-4 border" style="height: 250px">
+            <h2 class="p-2">Metric 2</h2>
+          </div>
+          <div class="col-4 border" style="height: 250px">
+            <h2 class="p-2">Metric 3</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 border" style="height: 250px">
+            <h2 class="p-2">Metric 4</h2>
+          </div>
+          <div class="col-4 border" style="height: 250px">
+            <h2 class="p-2">Metric 5</h2>
+          </div>
+          <div class="col-4 border" style="height: 250px">
+            <h2 class="p-2">Metric 6</h2>
+          </div>
+        </div>
+      </div>
+
+      <!--Jobs Table-->
+
+      <div class="container w-100">
+        <div class="d-flex justify-content-between align-content-center">
+          <h1 class="pb-5">Jobs</h1>
+          <a
+            class="btn btn-primary justify-content-end"
+            href="newjobs.html"
+            style="height: 40px"
+            >Add New Job</a
+          >
+        </div>
         <table class="table table-bordered table-responsive table-hover">
-            <thead>
-                <tr>
-                    <th>Customer ID</th>
-                    <th>Customer Name</th>
-                    <th>Customer Address</th>
-                    <th>Address Line 2</th>
-                    <th>Customer City</th>
-                    <th>Customer State</th>
-                    <th>Customer Zip</th>
-                    <th>Customer Phone</th>
-                </tr>
-            </thead>
+          <thead>
             <tr>
-                <td>1</td>
-                <td>Novamacro</td>
-                <td>11810 Etheridge Pl</td>
-                <td></td>
-                <td>Arlington</td>
-                <td>Tennessee</td>
-                <td>38002</td>
-                <td>9014441025</td>
+              <th>Job ID</th>
+              <th>Recycler</th>
+              <th>Delivery ID</th>
+              <th>Job Start Date</th>
+              <th>Job End Date</th>
+              <th>Job Status</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Novamacro</td>
-                <td>11810 Etheridge Pl</td>
-                <td></td>
-                <td>Arlington</td>
-                <td>Tennessee</td>
-                <td>38002</td>
-                <td>9014441025</td>
-            </tr>
+          </thead>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>6/25/2022</td>
+            <td></td>
+            <td>Processing Not Started</td>
+          </tr>
         </table>
-    </div>
+      </div>
 
+      <div class="container w-100">
+        <div class="d-flex justify-content-between align-content-center">
+          <h1 class="pb-5">Recycler</h1>
+          <a
+            class="btn btn-primary justify-content-end"
+            href="newrecycler.html"
+            style="height: 40px"
+            >Add New Recycler</a
+          >
+        </div>
+        <table class="table table-bordered table-responsive table-hover">
+          <thead>
+            <tr>
+              <th>Recycler ID</th>
+              <th>Recycler Name</th>
+              <th>Recycler Address</th>
+              <th>Address Line 2</th>
+              <th>Recycler City</th>
+              <th>Recycler State</th>
+              <th>Recycler Zip</th>
+              <th>Recycler Phone</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>1</td>
+            <td>Novamacro</td>
+            <td>11810 Etheridge Pl</td>
+            <td></td>
+            <td>Arlington</td>
+            <td>Tennessee</td>
+            <td>38002</td>
+            <td>9014441025</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Novamacro</td>
+            <td>11810 Etheridge Pl</td>
+            <td></td>
+            <td>Arlington</td>
+            <td>Tennessee</td>
+            <td>38002</td>
+            <td>9014441025</td>
+          </tr>
+        </table>
+      </div>
+    </main>
 
-<!--Footer-->
+    <!--Footer-->
 
     <footer class="container footer mt-auto py-3 bg-light">
       <div class="d-flex justify-content-between">
-         <span class="text-muted p-3">© H&L Metals 2022</span>
-         <span class="text-muted text-end p-3">Powered by Novamacro</span>
+        <span class="text-muted p-3">© H&L Metals 2022</span>
+        <span class="text-muted text-end p-3">Powered by Novamacro</span>
       </div>
     </footer>
-<!-- Bootstrap JS and Popper CDN -->
+    <!-- Bootstrap JS and Popper CDN -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-            crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
