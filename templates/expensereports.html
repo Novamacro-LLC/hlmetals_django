@@ -183,9 +183,37 @@
               <label for="employeeExpense">Employee Expensing</label>
             </div>
             <div class="form-floating p-1">
-              <input type="text" />
+              <input
+                type="date"
+                class="form-control"
+                id="expenseStartDate"
+                placeholder="..."
+              />
+              <label for="expenseStartDate">Expense Start Date</label>
+            </div>
+            <div class="form-floating p-1">
+              <input
+                type="date"
+                class="form-control"
+                id="expenseEndDate"
+                placeholder="..."
+              />
+              <label for="expenseEndDate">Expense End Date</label>
             </div>
           </form>
+        </div>
+        <div class="p-5">
+          <table class="table table-bordered table-responsive table-hover">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Vendor</th>
+                <th>Account</th>
+                <th>Transaction Date</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+          </table>
         </div>
       </div>
     </main>
