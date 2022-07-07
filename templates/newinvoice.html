@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>H&L Metals Work Portal New Customer</title>
+    <title>H&L Metals Work Portal Main</title>
 
-    <!--Bootstrap CDN -->
-
+    <!--Bootstrap CSS CDN-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -99,10 +98,9 @@
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              id="dropdownRecycler"
               >Recycler</a
             >
-            <div class="dropdown-menu" aria-labelledby="dropdownRecycler">
+            <div class="dropdown-menu">
               <a class="dropdown-item" href="recycler.html">Recycler Module</a>
               <h6 class="dropdown-header">Recycling Company</h6>
               <a class="dropdown-item" href="recyclerhome.html"
@@ -124,10 +122,9 @@
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              id="dropdownAccounting"
               >Accounting</a
             >
-            <div class="dropdown-menu" aria-labelledby="dropdownAccounting">
+            <div class="dropdown-menu">
               <a class="dropdown-item" href="accounting.html"
                 >Accounting Module</a
               >
@@ -135,10 +132,12 @@
               <a class="dropdown-item" href="expensereports.html"
                 >Expense Reports</a
               >
-              <a class="dropdown-item active" href="vendor.html">Vendor Management</a>
+              <a class="dropdown-item" href="vendor.html">Vendor Management</a>
               <a class="dropdown-item" href="ap.html">Account Payables</a>
               <h6 class="dropdown-header">Income</h6>
-              <a class="dropdown-item" href="sales.html">Sales Management</a>
+              <a class="dropdown-item active" href="sales.html"
+                >Sales Management</a
+              >
               <a class="dropdown-item" href="ar.html">Account Receivables</a>
               <h6 class="dropdown-header">Accounts</h6>
               <a class="dropdown-item" href="gl.html">General Ledger</a>
@@ -152,16 +151,16 @@
               <a class="dropdown-item" href="budget.html"
                 >Budgeting and Forecasting</a
               >
+              <a class="" href=""></a>
             </div>
           </li>
         </ul>
       </header>
     </div>
 
-    <!--Add New Customer Form-->
     <main>
       <div class="container text-center">
-        <h1 class="p-5">Add New Vendor</h1>
+        <h1 class="p-5">Add New Invoice</h1>
       </div>
       <div class="container">
         <div class="d-flex justify-content-center">
@@ -170,90 +169,52 @@
               <input
                 type="text"
                 class="form-control"
-                id="vendorID"
+                id="invoiceID"
                 placeholder="..."
                 disabled
               />
-              <label for="vendorID">Vendor ID</label>
+              <label for="invoiceID">Invoice ID</label>
             </div>
             <div class="form-floating p-1">
               <input
                 type="text"
                 class="form-control"
-                id="vendorName"
+                id="customerName"
                 placeholder="..."
               />
-              <label for="vendorName">Vendor Name</label>
+              <label for="customerName">Customer Name</label>
             </div>
             <div class="form-floating p-1">
               <input
                 type="text"
                 class="form-control"
-                id="vendorAddress1"
+                id="invoiceDate"
                 placeholder="..."
               />
-              <label for="vendorAddress1">Vendor Address</label>
+              <label for="invoiceDate">Invoice Date</label>
             </div>
             <div class="form-floating p-1">
               <input
                 type="text"
                 class="form-control"
-                id="vendorAddress2"
+                id="invoiceDueDate"
                 placeholder="..."
               />
-              <label for="vendorAddress2">Address Line 2</label>
+              <label for="invoiceDueDate">Invoice Due Date</label>
             </div>
             <div class="form-floating p-1">
               <input
                 type="text"
                 class="form-control"
-                id="vendorCity"
+                id="invoiceAmt"
                 placeholder="..."
               />
-              <label for="vendorCity">City</label>
-            </div>
-            <div class="form-floating p-1">
-              <input
-                type="text"
-                class="form-control"
-                id="vendorState"
-                placeholder="..."
-              />
-              <label for="vendorState">State</label>
-            </div>
-            <div class="form-floating p-1">
-              <input
-                type="text"
-                class="form-control"
-                id="vendorZip"
-                placeholder="..."
-              />
-              <label for="vendorZip">Zip</label>
-            </div>
-            <div class="form-floating p-1">
-              <input
-                type="text"
-                class="form-control"
-                id="vendorPhone"
-                placeholder="..."
-              />
-              <label for="vendorPhone">Phone</label>
-            </div>
-            <div class="p-1">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="vendorActive"
-                value=""
-                checked
-                disabled
-              />
-              <label for="vendorActive">Active</label>
+              <label for="invoiceAmt">Invoice Amount</label>
             </div>
             <input
               type="submit"
               class="btn btn-primary mb-5 mt-1"
-              value="Add New Vendor"
+              value="Add New Invoice"
             />
           </form>
         </div>
@@ -268,16 +229,17 @@
         <span class="text-muted text-end p-3">Powered by Novamacro</span>
       </div>
     </footer>
-    <!-- Bootstrap JS and Popper CDN -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+    <!--Bootstrap JS and Popper CDN-->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
   </body>
