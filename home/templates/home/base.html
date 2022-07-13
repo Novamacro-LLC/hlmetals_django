@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H&L Metals Work Portal Main</title>
+
+    <!--Bootstrap CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Header-->
+
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <!--<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>-->
+          <span class="fs-4">H&L Metals Work Portal</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'main' %}">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="../../../company/templates/customer/customer.html"
+              data-bs-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              id="dropdownCustomer"
+              >Customer</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownCustomer">
+              <a
+                class="dropdown-item"
+                href="../../../company/templates/customer/customer.html"
+                >Customer Module</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../company/templates/customer/newcustomer.html"
+                >Add New Customer</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="../../../logistics/templates/logistics.html"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              id="dropdownLogistics"
+              >Logistics</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownLogistics">
+              <a
+                class="dropdown-item"
+                href="../../../logistics/templates/logistics.html"
+                >Logistics Module</a
+              >
+              <h6 class="dropdown-header">Trailer</h6>
+              <a
+                class="dropdown-item"
+                href="../../../logistics/templates/trailer.html"
+                >Trailer Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../logistics/templates/newtrailer.html"
+                >Add New Trailer</a
+              >
+              <h6 class="dropdown-header">Trucking Company</h6>
+              <a
+                class="dropdown-item"
+                href="../../../company/templates/trucking/trucking.html"
+                >Trucking Company Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../company/templates/trucking/newtrucking.html"
+                >Add New Trucking Company</a
+              >
+              <h6 class="dropdown-header">Pickup</h6>
+              <a
+                class="dropdown-item"
+                href="../../../logistics/templates/pickup.html"
+                >Pickup Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../logistics/templates/newpickup.html"
+                >Add New Pickup</a
+              >
+              <h6 class="dropdown-header">Delivery</h6>
+              <a
+                class="dropdown-item"
+                href="../../../logistics/templates/delivery.html"
+                >Delivery Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../logistics/templates/newdelivery.html"
+                >Add New Delivery</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="../../../company/templates/recyclers/recycler.html"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Recycler</a
+            >
+            <div class="dropdown-menu">
+              <a
+                class="dropdown-item"
+                href="../../../company/templates/recyclers/recycler.html"
+                >Recycler Module</a
+              >
+              <h6 class="dropdown-header">Recycling Company</h6>
+              <a
+                class="dropdown-item"
+                href="../../../recycler/templates/recyclerhome.html"
+                >Recycler Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../company/templates/recyclers/newrecycler.html"
+                >Add New Recycler</a
+              >
+              <h6 class="dropdown-header">Recycling Jobs</h6>
+              <a
+                class="dropdown-item"
+                href="../../../recycler/templates/jobs.html"
+                >Job Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../recycler/templates/newjobs.html"
+                >Add New Job</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="../../../accounting/templates/accounting.html"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Accounting</a
+            >
+            <div class="dropdown-menu">
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/accounting.html"
+                >Accounting Module</a
+              >
+              <h6 class="dropdown-header">Expenses</h6>
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/expensereports.html"
+                >Expense Reports</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../company/templates/vendors/vendor.html"
+                >Vendor Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/ap.html"
+                >Account Payables</a
+              >
+              <h6 class="dropdown-header">Income</h6>
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/sales.html"
+                >Sales Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/ar.html"
+                >Account Receivables</a
+              >
+              <h6 class="dropdown-header">Accounts</h6>
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/gl.html"
+                >General Ledger</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/coa.html"
+                >Chart of Accounts</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/banks.html"
+                >Banking</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/asset.html"
+                >Asset Management</a
+              >
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/acctreports.html"
+                >Financial Reports</a
+              >
+              <h6 class="dropdown-header">Budgeting and Forecasting</h6>
+              <a
+                class="dropdown-item"
+                href="../../../accounting/templates/budget.html"
+                >Budgeting and Forecasting</a
+              >
+              <a class="" href=""></a>
+            </div>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <main>{% block content %}{% endblock content %}</main>
+
+    <!--Footer-->
+
+    <footer class="container footer mt-auto py-3 bg-light">
+      <div class="d-flex justify-content-between">
+        <span class="text-muted p-3">© H&L Metals 2022</span>
+        <span class="text-muted text-end p-3">Powered by Novamacro</span>
+      </div>
+    </footer>
+
+    <!--Bootstrap JS and Popper CDN-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
