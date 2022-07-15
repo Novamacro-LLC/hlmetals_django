@@ -1,4 +1,4 @@
-{{ extends 'home/base.html' }}{{ block }}
+{% extends 'home/base.html' %}{% block content %}
 
     <!--Welcome Hero-->
     <main class="pb-5">
@@ -70,26 +70,18 @@
               <th>Customer Phone</th>
             </tr>
           </thead>
-          <tr>
-            <td>1</td>
-            <td>Novamacro</td>
-            <td>11810 Etheridge Pl</td>
-            <td></td>
-            <td>Arlington</td>
-            <td>Tennessee</td>
-            <td>38002</td>
-            <td>9014441025</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Novamacro</td>
-            <td>11810 Etheridge Pl</td>
-            <td></td>
-            <td>Arlington</td>
-            <td>Tennessee</td>
-            <td>38002</td>
-            <td>9014441025</td>
-          </tr>
+          {% for i in co %}
+            <tr>
+                <td>{{ i.id }}</td>
+                <td>{{ i.company_namr }}</td>
+                <td>{{ i.company_address1 }}</td>
+                <td>{{ i.company_address2 }}</td>
+                <td>{{ i.company_city }}</td>
+                <td>{{ i.company_state }}</td>
+                <td>{{ i.company_zip }}</td>
+                <td>{{ i.company_phone }}</td>
+            </tr>
+            {% endfor %}
         </table>
       </div>
-{{ endblock }}
+{% endblock %}
