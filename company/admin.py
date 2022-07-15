@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import State, CompanyType, NoteType
 
-# Register your models here.
+admin.site.register(CompanyType)
+admin.site.register(NoteType)
+admin.site.register(State)
