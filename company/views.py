@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Company, Notes
 from django.http import HttpResponse
-from .form import Customer
+from .form import Customer, Note
 
 
 def customer(request):
@@ -31,8 +31,24 @@ def new_customer(request):
     else:
         form = Customer(request.POST)
         if form.is_valid():
+            Company.company_type = 1
             form.save()
         else:
             HttpResponse('Data is not valid and cannot be saved.')
         redirect('customer')
+
+
+def note(request, notenum):
+    if request.method == 'GET':
+        note = Notes.objects.filter(id=notenum)
+        context = {'note': note}
+        return render(request, 'note/noteedit.html', context)
+    else:
+        form = Note(request.POST)
+        if form.is_valid():
+            form.save()
+        else:
+            HttpResponse('Data is not valid and cannot be saved')
+        redirect('customer')
+
 
