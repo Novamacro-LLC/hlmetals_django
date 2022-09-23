@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     #added apps
     'accounting',
     'company',
-    'home',
+    'index',
     'logistics',
     'recycler'
 ]
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'hlmetals_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'home/templates']
+        'DIRS': [BASE_DIR / 'index/templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
