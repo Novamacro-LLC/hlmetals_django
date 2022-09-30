@@ -1,9 +1,5 @@
 from django.shortcuts import render
 
 
-def login(request):
-    return render(request, 'home/home.html')
-
-
 def main(request):
-    return render(request, 'home/main.html')
+    return render(request, 'home/../account/templates/main.html')

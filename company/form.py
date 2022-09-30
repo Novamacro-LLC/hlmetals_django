@@ -1,5 +1,5 @@
 from django import forms
-from .models import Company
+from .models import Company, Notes
 
 
 class Customer(forms.ModelForm):
@@ -48,3 +48,13 @@ class Vendor(forms.ModelForm):
                   'company_state',
                   'company_zip',
                   'company_phone')
+
+
+class Note(forms.ModelForm):
+    class Meta:
+            model = Notes
+            fields = ('note_type',
+                      'company',
+                      'user',
+                      'date_added',
+                      'note')
