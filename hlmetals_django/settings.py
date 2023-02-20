@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-import account.models
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -77,6 +77,8 @@ TEMPLATES = [
     },
 ]
 
+AUTH_USER_MODEL = 'account.Account'
+
 WSGI_APPLICATION = 'hlmetals_django.wsgi.application'
 
 
@@ -109,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = account.models.Account
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/

@@ -33,32 +33,29 @@
     <!--Login Form-->
 
     <div class="form-signin w-50 m-auto">
-      <form>
-        <!--<img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
-        <h1 class="h3 mb-3 fw-normal justify-center">Please sign in</h1>
-
+      <h1 class="h3 mb-3 fw-normal justify-center">Please sign in</h1>
+      {% if form.errors %}
+      <p class="text-danger">Email or Password is invalid</p>
+      {% endif %} {% if next %}
+      <p class="text-danger">
+        Access is denied, please contact an Administrator
+      </p>
+      {% endif %}
+      <form action="POST">
         <div class="form-floating">
-          <input
-            type="email"
-            class="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
+          {{ form.email }}
           <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-          />
+          {{ form.password }}
           <label for="floatingPassword">Password</label>
         </div>
         <br />
-        <button class="w-100 btn btn-lg btn-primary" type="submit">
-          Sign in
-        </button>
+        <input
+          class="w-100 btn btn-lg btn-primary"
+          type="submit"
+          value="Sign in"
+        />
       </form>
     </div>
 

@@ -13,6 +13,11 @@ class RegistrationForm(UserCreationForm):
                   'username',
                   'first_name',
                   'last_name',
+                  'address',
+                  'city',
+                  'state',
+                  'post_code',
+                  'phone',
                   'password1',
                   'password2')
 
@@ -30,3 +35,14 @@ class AccountAuthenticationForm(forms.ModelForm):
         password = self.cleaned_data['password']
         if not authenticate(email=email, password=password):
             raise forms.ValidationError('Invalid email or password')
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['email'].widget.attrs.update({'type': 'email',
+                                                  'class': 'form-control',
+                                                  'id': 'floatingInput',
+                                                  'placeholder': 'name@emaple.com'})
+        self.fields['password'].widget.attrs.update({'type': 'password',
+                                                     'class': 'form-control',
+                                                     'id': 'floatingPassword',
+                                                     'placeholder': 'Password'})
